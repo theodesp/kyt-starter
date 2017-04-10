@@ -1,0 +1,32 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "kyt": "0.5.3"
+  },
+  "scripts": {
+    "dev": "kyt dev",
+    "build": "kyt build",
+    "start": "node build/server/main.js",
+    "proto": "kyt proto",
+    "test": "kyt test",
+    "test-watch": "kyt test -- --watch",
+    "test-coverage": "kyt test -- --coverage",
+    "lint": "npm run lint-script && npm run lint-style",
+    "lint-script": "kyt lint-script",
+    "lint-style": "kyt lint-style",
+    "kyt:help": "kyt --help"
+  },
+  "devDependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.15.2",
+    "html-webpack-plugin": "^2.28.0",
+    "moment": "^2.18.1",
+    "progress-bar-webpack-plugin": "^1.9.3",
+    "webpack-merge": "^4.1.0"
+  }
+}
