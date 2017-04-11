@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "kyt dev",
-    "build": "kyt build",
+    "build": "cross-env NODE_ENV=production kyt build",
     "start": "node build/server/main.js",
     "proto": "kyt proto",
     "test": "kyt test",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "compression": "^1.6.2",
+    "cross-env": "^4.0.0",
     "express": "^4.15.2",
     "html-webpack-plugin": "^2.28.0",
     "moment": "^2.18.1",
